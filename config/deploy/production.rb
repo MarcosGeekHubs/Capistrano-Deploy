@@ -20,6 +20,7 @@
 # role :app, %w{deploy@example.com}, my_property: :my_value
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
+role :app, %w{qatest@qatest.grupojuinsa.es}
 
 
 
@@ -59,3 +60,11 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+set :ssh_options, {
+    forward_agent: false,
+    keys: %w(/home/marcware/.ssh/id_rsa),
+    user: 'qatest',
+    auth_methods: %w(publickey password),
+    port: 2222
+}

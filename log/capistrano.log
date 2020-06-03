@@ -1,0 +1,112 @@
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-06-03 22:46:28 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1ebe5e59] Running /usr/bin/env mkdir -p /tmp as qatest@qatest.grupojuinsa.es
+ DEBUG [1ebe5e59] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1ebe5e59] Finished in 1.029 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-my_app_name-production-marcware.sh 0.0%
+  INFO Uploading /tmp/git-ssh-my_app_name-production-marcware.sh 100.0%
+  INFO [cca95295] Running /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-production-marcware.sh as qatest@qatest.grupojuinsa.es
+ DEBUG [cca95295] Command: /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-production-marcware.sh
+  INFO [cca95295] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [cdb2b097] Running /usr/bin/env git ls-remote git@github.com:MarcosGeekHubs/Capistrano-Deploy.git HEAD as qatest@qatest.grupojuinsa.es
+ DEBUG [cdb2b097] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git ls-remote git@github.com:MarcosGeekHubs/Capistrano-Deploy.git HEAD )
+ DEBUG [cdb2b097] 	3f32d1690e6093f2b2eae7e19db5235a2bcba4e2	HEAD
+  INFO [cdb2b097] Finished in 1.519 seconds with exit status 0 (successful).
+  INFO [2c77f969] Running /usr/bin/env mkdir -p /Capistrano/Marcos/shared /Capistrano/Marcos/releases as qatest@qatest.grupojuinsa.es
+ DEBUG [2c77f969] Command: /usr/bin/env mkdir -p /Capistrano/Marcos/shared /Capistrano/Marcos/releases
+ DEBUG [2c77f969] 	mkdir: no se puede crear el directorio «/Capistrano»
+ DEBUG [2c77f969] 	: Permiso denegado
+ DEBUG [2c77f969] 	mkdir: no se puede crear el directorio «/Capistrano»: Permiso denegado
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-06-03 22:48:46 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4263a112] Running /usr/bin/env mkdir -p /tmp as qatest@qatest.grupojuinsa.es
+ DEBUG [4263a112] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4263a112] Finished in 0.966 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-my_app_name-production-marcware.sh 0.0%
+  INFO Uploading /tmp/git-ssh-my_app_name-production-marcware.sh 100.0%
+  INFO [85c950c0] Running /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-production-marcware.sh as qatest@qatest.grupojuinsa.es
+ DEBUG [85c950c0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-my_app_name-production-marcware.sh
+  INFO [85c950c0] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [f2ace782] Running /usr/bin/env git ls-remote git@github.com:MarcosGeekHubs/Capistrano-Deploy.git HEAD as qatest@qatest.grupojuinsa.es
+ DEBUG [f2ace782] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git ls-remote git@github.com:MarcosGeekHubs/Capistrano-Deploy.git HEAD )
+ DEBUG [f2ace782] 	Warning: Permanently added the RSA host key for IP address '140.82.118.3' to the list of known hosts.
+ DEBUG [f2ace782] 	3f32d1690e6093f2b2eae7e19db5235a2bcba4e2	HEAD
+  INFO [f2ace782] Finished in 1.488 seconds with exit status 0 (successful).
+  INFO [79920e9a] Running /usr/bin/env mkdir -p /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/shared /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases as qatest@qatest.grupojuinsa.es
+ DEBUG [79920e9a] Command: /usr/bin/env mkdir -p /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/shared /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases
+  INFO [79920e9a] Finished in 0.379 seconds with exit status 0 (successful).
+ DEBUG [0b1e77ee] Running [ -f /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/current/REVISION ] as qatest@qatest.grupojuinsa.es
+ DEBUG [0b1e77ee] Command: [ -f /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/current/REVISION ]
+ DEBUG [0b1e77ee] Finished in 0.259 seconds with exit status 1 (failed).
+ DEBUG [14a8f60f] Running [ -f /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo/HEAD ] as qatest@qatest.grupojuinsa.es
+ DEBUG [14a8f60f] Command: [ -f /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo/HEAD ]
+ DEBUG [14a8f60f] Finished in 0.259 seconds with exit status 1 (failed).
+ DEBUG [0c52a509] Running if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos'" 1>&2; false; fi as qatest@qatest.grupojuinsa.es
+ DEBUG [0c52a509] Command: if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos'" 1>&2; false; fi
+ DEBUG [0c52a509] Finished in 0.259 seconds with exit status 0 (successful).
+  INFO [9bd63fac] Running /usr/bin/env git clone --mirror git@github.com:MarcosGeekHubs/Capistrano-Deploy.git /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo as qatest@qatest.grupojuinsa.es
+ DEBUG [9bd63fac] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git clone --mirror git@github.com:MarcosGeekHubs/Capistrano-Deploy.git /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo )
+ DEBUG [9bd63fac] 	Clonando en un repositorio vacío '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'...
+ DEBUG [9bd63fac] 	remote: Enumerating objects: 7, done.[K
+remote: Counting objects:  14% (1/7)[Kremote: Counting objects:  28% (2/7)[Kremote: Counting objects:  42% (3/7)[Kremote: Counting objects:  57% (4/7)[Kremote: Counting objects:  71% (5/7)[Kremote: Counting objects:  85% (6/7)[Kremote: Counting objects: 100% (7/7)[Kremote: Counting objects: 100% (7/7), done.[K
+remote: Compressing objects:  14% (1/7)[Kremote: Compressing objects:  28% (2/7)[Kremote: Compressing objects:  42% (3/7)[Kremote: Compressing objects:  57% (4/7)[Kremote: Compressing objects:  71% (5/7)[Kremote: Compressing objects:  85% (6/7)[Kremote: Compressing objects: 100% (7/7)[Kremote: Compressing objects: 100% (7/7), done.[K
+ DEBUG [9bd63fac] 	Recibiendo objetos:  14% (1/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos:  28% (2/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos:  42% (3/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos:  57% (4/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos:  71% (5/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos:  85% (6/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos: 100% (7/7)   
+ DEBUG [9bd63fac] 	Recibiendo objetos: 100% (7/7), listo.
+ DEBUG [9bd63fac] 	remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0[K
+  INFO [9bd63fac] Finished in 1.639 seconds with exit status 0 (successful).
+ DEBUG [944124b9] Running if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'" 1>&2; false; fi as qatest@qatest.grupojuinsa.es
+ DEBUG [944124b9] Command: if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'" 1>&2; false; fi
+ DEBUG [944124b9] Finished in 0.259 seconds with exit status 0 (successful).
+  INFO [e742db1c] Running /usr/bin/env git remote set-url origin git@github.com:MarcosGeekHubs/Capistrano-Deploy.git as qatest@qatest.grupojuinsa.es
+ DEBUG [e742db1c] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git remote set-url origin git@github.com:MarcosGeekHubs/Capistrano-Deploy.git )
+  INFO [e742db1c] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [854b6a3f] Running /usr/bin/env git remote update --prune as qatest@qatest.grupojuinsa.es
+ DEBUG [854b6a3f] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [854b6a3f] 	Extrayendo origin
+  INFO [854b6a3f] Finished in 1.538 seconds with exit status 0 (successful).
+ DEBUG [a220c33a] Running if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'" 1>&2; false; fi as qatest@qatest.grupojuinsa.es
+ DEBUG [a220c33a] Command: if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'" 1>&2; false; fi
+ DEBUG [a220c33a] Finished in 0.260 seconds with exit status 0 (successful).
+  INFO [f912ab11] Running /usr/bin/env mkdir -p /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 as qatest@qatest.grupojuinsa.es
+ DEBUG [f912ab11] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env mkdir -p /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 )
+  INFO [f912ab11] Finished in 0.269 seconds with exit status 0 (successful).
+  INFO [2a6a3795] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 as qatest@qatest.grupojuinsa.es
+ DEBUG [2a6a3795] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 )
+  INFO [2a6a3795] Finished in 0.289 seconds with exit status 0 (successful).
+ DEBUG [6079ad34] Running if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'" 1>&2; false; fi as qatest@qatest.grupojuinsa.es
+ DEBUG [6079ad34] Command: if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo'" 1>&2; false; fi
+ DEBUG [6079ad34] Finished in 0.261 seconds with exit status 0 (successful).
+ DEBUG [a2eb1a3f] Running /usr/bin/env git rev-list --max-count=1 master as qatest@qatest.grupojuinsa.es
+ DEBUG [a2eb1a3f] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-my_app_name-production-marcware.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [a2eb1a3f] 	3f32d1690e6093f2b2eae7e19db5235a2bcba4e2
+ DEBUG [a2eb1a3f] Finished in 0.290 seconds with exit status 0 (successful).
+ DEBUG [e328540e] Running if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850'" 1>&2; false; fi as qatest@qatest.grupojuinsa.es
+ DEBUG [e328540e] Command: if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850'" 1>&2; false; fi
+ DEBUG [e328540e] Finished in 0.257 seconds with exit status 0 (successful).
+  INFO [7bb32e43] Running /usr/bin/env echo "3f32d1690e6093f2b2eae7e19db5235a2bcba4e2" > REVISION as qatest@qatest.grupojuinsa.es
+ DEBUG [7bb32e43] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 && /usr/bin/env echo "3f32d1690e6093f2b2eae7e19db5235a2bcba4e2" > REVISION
+  INFO [7bb32e43] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [13840674] Running /usr/bin/env ln -s /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/current as qatest@qatest.grupojuinsa.es
+ DEBUG [13840674] Command: /usr/bin/env ln -s /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/20200603204850 /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/current
+  INFO [13840674] Finished in 0.258 seconds with exit status 0 (successful).
+  INFO [afb00341] Running /usr/bin/env mv /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/current /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos as qatest@qatest.grupojuinsa.es
+ DEBUG [afb00341] Command: /usr/bin/env mv /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases/current /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos
+  INFO [afb00341] Finished in 0.269 seconds with exit status 0 (successful).
+ DEBUG [0a3765c3] Running /usr/bin/env ls -x /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases as qatest@qatest.grupojuinsa.es
+ DEBUG [0a3765c3] Command: /usr/bin/env ls -x /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases
+ DEBUG [0a3765c3] 	20200603204850
+ DEBUG [0a3765c3] Finished in 0.279 seconds with exit status 0 (successful).
+ DEBUG [b7fb663c] Running if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases'" 1>&2; false; fi as qatest@qatest.grupojuinsa.es
+ DEBUG [b7fb663c] Command: if test ! -d /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases; then echo "Directory does not exist '/var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases'" 1>&2; false; fi
+ DEBUG [b7fb663c] Finished in 0.259 seconds with exit status 0 (successful).
+  INFO [dafea24c] Running /usr/bin/env echo "Branch master (at 3f32d1690e6093f2b2eae7e19db5235a2bcba4e2) deployed as release 20200603204850 by marcware" >> /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/revisions.log as qatest@qatest.grupojuinsa.es
+ DEBUG [dafea24c] Command: cd /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/releases && /usr/bin/env echo "Branch master (at 3f32d1690e6093f2b2eae7e19db5235a2bcba4e2) deployed as release 20200603204850 by marcware" >> /var/www/vhosts/qatest.grupojuinsa.es/Capistrano/Marcos/revisions.log
+  INFO [dafea24c] Finished in 0.259 seconds with exit status 0 (successful).
